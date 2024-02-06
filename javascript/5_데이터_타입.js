@@ -57,7 +57,7 @@ const strTL = `/// ' " ' " asdf asdf
 1122344 hello`;
 console.log(strTL);
 
-console.log(`${str1} <- 변수입니다.`) // Template Literal을 사용해서 ${}로 변수를 사용할 수 있다.
+console.log(`${str1} <- 변수입니다.`); // Template Literal을 사용해서 ${}로 변수를 사용할 수 있다.
 
 /**
  * - Boolean 타입 : true, false
