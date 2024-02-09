@@ -71,3 +71,45 @@ do{
     number2++;
 }while(number2 < 10);
 console.log(number2);
+console.log('----------');
+/**
+ * break : 현재 반복문을 강제로 빠져나올때 사용한다.
+ */
+
+for(let i = 0;i < 5; i++){
+    if(i===3){
+        break;
+    }
+    console.log(i); // 0 1 2
+}
+console.log('----------');
+
+let number3 = 0;
+while(number3 < 5){
+    if(number3 === 2){
+        break;
+    }
+    number3++;
+    console.log(number3); // 1 2
+}
+console.log('----------');
+/**
+ * continue : 현재 진행하고 있는 루프만 스킵하고 다음 루프를 실행한다.
+ */
+
+for(let i = 0; i < 5; i++){
+    if(i===3){
+        continue;
+    }
+    console.log(i); // 0 1 2 4
+}
+console.log('----------');
+
+let number4 = 0;
+while(number4 < 5){
+    number4++;
+    if(number4 === 2){
+        continue;
+    }
+    console.log(number4); // 1 3 4 5
+}
