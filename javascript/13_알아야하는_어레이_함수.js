@@ -71,9 +71,9 @@ console.log(color4); // [ [ 'red', 'blue', 'yellow', 'green', 'black', 'white' ]
 
 console.log(color4 === color); // color4를 color와 같은지 비교하면 color4에 color를 저장했기 때문에 당연히 true가 출력된다.
 
-console.log([
-    ...color,
-] === color); // ...로 값을 펼쳐놓으면 완전히 새로운 배열이 생성되기 때문에(메모리 공간이 다르다) 값이 같더라도 false가 출력된다.
+// console.log([
+//     ...color,
+// ] === color); // ...로 값을 펼쳐놓으면 완전히 새로운 배열이 생성되기 때문에(메모리 공간이 다르다) 값이 같더라도 false가 출력된다.
 
 
 // join(<separator>) : 배열의 모든 요소들을 연결하여 하나의 문자열로 만드는 함수이다. <separator>는 각 배열의 요소를 구분할 문자열을 설정한다. 기본값(,)
