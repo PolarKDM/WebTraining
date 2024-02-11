@@ -13,13 +13,12 @@ let color = [
 console.log(color);
 
 // push() : 새로운 값을 맨끝에다가 추가하고 해당 array의 길이를 반환한다.
-color.push('pupple');
-console.log(color);
+
 console.log(color.push('pupple')); // push() 함수의 리턴값은 해당 array의 길이이다.
+console.log(color);
 
 console.log("----------");
 // pop() : 마지막 elements를 삭제하고 삭제한 값을 반환한다.
-color.pop();
 console.log(color.pop());
 console.log(color);
 
@@ -31,7 +30,7 @@ console.log(color);
 console.log(color.unshift('red'));
 console.log(color);
 
-// splice(<시작지점>, <갯수>) : <시작지점>에서 <갯수>만큼 삭제하고 그 값들을 반환한다.
+// splice([시작지점], [갯수]) : [시작지점]에서 [갯수]만큼 삭제하고 그 값들을 반환한다.
 console.log(color.splice(0, 3));
 console.log(color);
 
@@ -50,7 +49,7 @@ console.log(color);
 console.log(color.concat('pupple'));
 console.log(color);
 
-// slice(<시작지점>, <끝지점>) : <시작지점> ~ <끝지점>-1 번째까지 삭제하고 그 값을 반환한다. concat()과 같이 기존 배열에는 변화가 없다.
+// slice([시작지점], [끝지점]) : [시작지점] ~ [끝지점]-1 번째까지 삭제하고 그 값을 반환한다. concat()과 같이 기존 배열에는 변화가 없다.
 console.log(color.slice(0, 3));
 console.log(color);
 
@@ -76,7 +75,7 @@ console.log(color4 === color); // color4를 color와 같은지 비교하면 colo
 // ] === color); // ...로 값을 펼쳐놓으면 완전히 새로운 배열이 생성되기 때문에(메모리 공간이 다르다) 값이 같더라도 false가 출력된다.
 
 
-// join(<separator>) : 배열의 모든 요소들을 연결하여 하나의 문자열로 만드는 함수이다. <separator>는 각 배열의 요소를 구분할 문자열을 설정한다. 기본값(,)
+// join([separator]) : 배열의 모든 요소들을 연결하여 하나의 문자열로 만드는 함수이다. [separator]는 각 배열의 요소를 구분할 문자열을 설정한다. 기본값(,)
 console.log(typeof color.join()); // string
 console.log(color.join()); // red,blue,yellow,green,black,white
 console.log(color.join(' / ')); // red / blue / yellow / green / black / white
@@ -130,8 +129,8 @@ console.log(num2.find(x => x % 2 === 0));
 // findIndex() : 조건의 해당되는 값을 순서대로 찾아서 먼저 찾은 값의 index를 반환한다.
 console.log(num2.findIndex(x => x % 2 === 0));
 
-// reduce((p, n) => <식>, <초기값>) : 배열의 요소를 하나로 줄이는(reduce) 작업을 수행하는 함수이다. reduce 함수로 배열의 각 요소를 순회하면서 누적된 값을 계산하고 최종 결과를 반환할 수 있다.
-// p : 이전 순회에서의 최종 결과값. <초기값>이 설정된 경우 첫번째 순회때 p는 <초기값>이 된다.
+// reduce((p, n) =] [식], [초기값]) : 배열의 요소를 하나로 줄이는(reduce) 작업을 수행하는 함수이다. reduce 함수로 배열의 각 요소를 순회하면서 누적된 값을 계산하고 최종 결과를 반환할 수 있다.
+// p : 이전 순회에서의 최종 결과값. [초기값]이 설정된 경우 첫번째 순회때 p는 [초기값]이 된다.
 // n : 현재 순회중인 배열의 값
 console.log(num2.reduce((p, n) => p + n, 0)); // 배열에 있는 값들을 모두 더한다.
 
