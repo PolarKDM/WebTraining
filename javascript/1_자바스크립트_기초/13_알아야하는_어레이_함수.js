@@ -49,7 +49,7 @@ console.log(color);
 console.log(color.concat('pupple'));
 console.log(color);
 
-// slice([시작지점], [끝지점]) : [시작지점] ~ [끝지점]-1 번째까지 삭제하고 그 값을 반환한다. concat()과 같이 기존 배열에는 변화가 없다.
+// slice([시작지점], [끝지점]) : [시작지점] ~ [끝지점]-1 번째까지 값들을 반환한다. concat()과 같이 기존 배열에는 변화가 없다.
 console.log(color.slice(0, 3));
 console.log(color);
 
@@ -66,7 +66,7 @@ let color3 = [
 console.log(color3); // [ [ 'red', 'blue', 'yellow', 'green', 'black', 'white' ] ]
 
 let color4 = color; // 배열에 넣지말고 그냥 변수에 color를 저장하게 되면 배열에 ...color를 저장한 것과 똑같은 결과가 나온다.
-console.log(color4); // [ [ 'red', 'blue', 'yellow', 'green', 'black', 'white' ] ]
+console.log(color4); // [ 'red', 'blue', 'yellow', 'green', 'black', 'white' ]
 
 console.log(color4 === color); // color4를 color와 같은지 비교하면 color4에 color를 저장했기 때문에 당연히 true가 출력된다.
 
@@ -122,14 +122,14 @@ let num2 = [1, 8, 7, 6, 3];
 console.log(num2.filter(x => x % 2 === 0)); // num2의 요소들 중 짝수인 값 찾아서 반환한다.
 // [ 8, 6 ]
 
-// find() : 조건의 해당되는 값을 순서대로 찾아서 먼저 찾은 값만 반환한다.
+// find() : 조건에 해당되는 값을 순서대로 찾아서 먼저 찾은 값만 반환한다.
 console.log(num2.find(x => x % 2 === 0));
 // 8
 
 // findIndex() : 조건의 해당되는 값을 순서대로 찾아서 먼저 찾은 값의 index를 반환한다.
 console.log(num2.findIndex(x => x % 2 === 0));
 
-// reduce((p, n) =] [식], [초기값]) : 배열의 요소를 하나로 줄이는(reduce) 작업을 수행하는 함수이다. reduce 함수로 배열의 각 요소를 순회하면서 누적된 값을 계산하고 최종 결과를 반환할 수 있다.
+// reduce((p, n) => [식], [초기값]) : 배열의 요소를 하나로 줄이는(reduce) 작업을 수행하는 함수이다. reduce 함수로 배열의 각 요소를 순회하면서 누적된 값을 계산하고 최종 결과를 반환할 수 있다.
 // p : 이전 순회에서의 최종 결과값. [초기값]이 설정된 경우 첫번째 순회때 p는 [초기값]이 된다.
 // n : 현재 순회중인 배열의 값
 console.log(num2.reduce((p, n) => p + n, 0)); // 배열에 있는 값들을 모두 더한다.
