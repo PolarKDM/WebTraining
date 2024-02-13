@@ -12,8 +12,9 @@ let me = {
 };
 // 정의하고 싶은 값들을 성격이 비슷한 값들끼리 묶는 역할을 한다.
 // this : 자기자신을 가리키는 키워드
+// 프로퍼티(property) : 다른 값과 연관되어 있는 값
 
-console.log(me);
+console.log(me); // { name: 'kim', age: 29, study: [Function: study] }
 console.log(me.name); // kim
 console.log(me['name']); // kim
 

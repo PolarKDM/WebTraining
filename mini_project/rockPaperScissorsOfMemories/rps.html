@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>추억의 가위바위보</title>
+    <script src="rock_paper_scissors.js"></script>
 </head>
 <body>
-    <input type="button" value="가위">
-    <input type="button" value="바위">
-    <input type="button" value="보">
+    <input type="button" value="가위" onclick="playerCode = selectRPS(this.value)">
+    <input type="button" value="바위" onclick="playerCode = selectRPS(this.value)">
+    <input type="button" value="보" onclick="playerCode = selectRPS(this.value)">
+    <input type="button" value="내기!" onclick="playRPS()">
+    <div id="ready"></div>
+    <div id="result"></div>
+    <!-- <div id="test"></div> -->
 </body>
 </html>
