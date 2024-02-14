@@ -1,5 +1,5 @@
 // 주석
-console.log('hello World'); // hello world 출력
+console.log("hello World"); // hello world 출력
 
 // 단축키 ctrl + /
 

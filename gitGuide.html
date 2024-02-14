@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>git 사용법 </title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>git 사용법</title>
+  </head>
+  <body>
     <h1><a href="index.html">git</a> 튜토리얼</h1>
     <p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lelVripbt2M?si=s7eLmlWKqpjXf8yp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/lelVripbt2M?si=s7eLmlWKqpjXf8yp"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
     </p>
 
     <ol>
-        <li>git 다운로드 <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a> 이후 git bash 실행</li>
-        <li>git config --global user.name "이름"</li>
-        <li>git config --global user.email "이메일"</li>
-        <ul>
-            <li>
-                git config --list : 이름과 이메일이 정상적으로 입력됐는지 확인.<br>
-                <img src="/img/gitConfig--list.jpg">
-            </li>
-        </ul>
-        <li>git init : 프로젝트를 맨처음 올릴때 입력</li>
-        <li>git add 파일명 : 해당 파일을 git에 추가</li>
-        <ul>
-            <li>
-                git status : 현재 깃의 상태를 출력한다.<br>
-                <img src="/img/gitStatus.jpg"><br>
-                초록색 : git add 명령어로 git에 commit할 파일들을 출력한다.(tracked 상태)<br>
-                빨간색 : <br>
-                gitGuide.html : git add 입력 후 수정된 파일이다. git add를 한적이 있으므로 tracked 상태이다. <br>
-                img/gitStatus.jpg : git add 입력 후 새로 만들어진 파일이다.(untracked 상태)
-            </li>
-        </ul>
-        <li>git commit -m "히스토리 코멘트" : git의 히스토리 만들어준다.</li>
+      <li>
+        git 다운로드
+        <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
+        이후 git bash 실행
+      </li>
+      <li>git config --global user.name "이름"</li>
+      <li>git config --global user.email "이메일"</li>
+      <ul>
         <li>
-            git remote add origin git@github.com:PolarKDM/WebTraining.git : 현재 git과 나의 gitHub내 프로젝트와 연결한다.<br>
-            git remote -v : 연결 상태 출력    
+          git config --list : 이름과 이메일이 정상적으로 입력됐는지 확인.<br />
+          <img src="/img/gitConfig--list.jpg" />
         </li>
-        <li>git push origin master : github로 push</li>
+      </ul>
+      <li>git init : 프로젝트를 맨처음 올릴때 입력</li>
+      <li>git add 파일명 : 해당 파일을 git에 추가</li>
+      <ul>
+        <li>
+          git status : 현재 깃의 상태를 출력한다.<br />
+          <img src="/img/gitStatus.jpg" /><br />
+          초록색 : git add 명령어로 git에 commit할 파일들을 출력한다.(tracked 상태)<br />
+          빨간색 : <br />
+          gitGuide.html : git add 입력 후 수정된 파일이다. git add를 한적이 있으므로 tracked 상태이다. <br />
+          img/gitStatus.jpg : git add 입력 후 새로 만들어진 파일이다.(untracked 상태)
+        </li>
+      </ul>
+      <li>git commit -m "히스토리 코멘트" : git의 히스토리 만들어준다.</li>
+      <li>
+        git remote add origin git@github.com:PolarKDM/WebTraining.git : 현재 git과 나의 gitHub내 프로젝트와 연결한다.<br />
+        git remote -v : 연결 상태 출력
+      </li>
+      <li>git push origin master : github로 push</li>
     </ol>
-</body>
+  </body>
 </html>

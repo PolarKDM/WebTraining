@@ -1,6 +1,6 @@
 /**
  * 변수(Variable) 선언하기
- * 
+ *
  * 1) var - 더 이상 쓰진 않지만 아직 var 키워드로 만들어진 js가 많기 때문에 알아둬야한다.
  * 2) let
  * 3) const
@@ -22,7 +22,7 @@ console.log(cstNum); // 30
 
 /**
  * 선언과 할당
- * 
+ *
  * 1) 선언 : var name
  * 2) 할당 : name = 'KDM'
  */

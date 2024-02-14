@@ -12,6 +12,6 @@ console.log(name); // KDM
 // console.log(num); -> 에러
 // console.log(cNum); -> 에러
 let lNum = 40;
-const cNum = 50
+const cNum = 50;
 console.log(lNum);
 console.log(cNum);
